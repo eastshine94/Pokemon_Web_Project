@@ -1,0 +1,65 @@
+.homeWrapper {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.homeImage {
+    margin: 0 2rem 0 0;
+    width: 45%;
+    height: 25rem;
+    display: block;
+}
+
+.noticeBlock{
+    width: 45%;
+}
+.noticePost{
+    font-weight: bold;
+    line-height: 2rem;
+    border-bottom: 1px solid rgb(224, 221, 221);
+    padding: 0.3rem 0;
+    cursor: pointer;
+}
+.noticePost:hover{
+    background-color: rgb(226, 226, 247);
+}
+.noticePostTitle{
+    display: inline-block;
+    width: 80%;
+    font-size: 0.95rem;
+    color:rgb(57, 48, 182);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+.category{
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    font-size: 0.75rem;
+    color: white;
+    width: 3rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.3rem;
+    text-transform: capitalize;
+}
+.notice{
+    background-color: rgb(238, 210, 51);
+}
+.game{
+    background-color: red;
+}
+.event{
+    background-color: rgb(57, 145, 57);
+}
+
+.product{
+    background-color: rgb(123, 33, 187);
+}
+

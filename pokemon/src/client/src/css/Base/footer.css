@@ -1,0 +1,11 @@
+.FooterContents {
+    width: 90%;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    margin: auto;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    font-size: 0.9rem;
+    color: gray;
+}

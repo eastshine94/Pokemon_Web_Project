@@ -1,0 +1,99 @@
+.Auth_Positioner {
+    width: 100%;
+}
+.Auth_Box {
+    width: 500px;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.Auth_LogoWrapper {
+    background: rgba(69, 72, 109, 0.9);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Auth_Logo {
+    color: white;
+    font-family: 'Rajdhani';
+    font-size: 2.4rem;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.Auth_Contents {
+    background: white;
+    padding: 2rem;
+    height: auto;
+}
+
+.Auth_Title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.Auth_Wrapper+.Auth_Wrapper {
+    margin-top: 1rem;
+}
+
+.Auth_Label {
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 0.25rem;
+}
+
+.Auth_Input {
+    width: 95%;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 0px;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+}
+.Auth_Input::placeholder{
+    color:rgb(207, 207, 207)
+}
+
+.Auth_Button_Wrapper {
+    margin-top: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+
+    background: rgb(96, 84, 204);
+    color: white;
+
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    cursor: pointer;
+    user-select: none;
+    transition: .2s all;
+}
+
+.Auth_Button_Wrapper:hover{
+    background: rgb(77, 67, 163);
+}
+
+.Auth_Button_Wrapper:active{
+    background: rgb(46, 40, 95);
+}
+
+
+.Aligner {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.StyledLink{
+    color:rgb(170, 170, 170);
+}
+.StyledLink:hover{
+    color:rgb(63, 61, 61);
+}

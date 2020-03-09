@@ -1,0 +1,202 @@
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.pokemonPreNext {
+    width: 100%;
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    align-content: flex-start;
+    background-color: rgba(0,0,0,0.3);
+    justify-content: space-between;
+}
+.onlyNext{
+    justify-content: flex-end;
+}
+
+.previous{
+    width: 20%;
+    display: flex;
+    margin: 0 0 0 4.2rem;
+    text-decoration: none;
+}
+
+.next {
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 4.2rem 0 0;
+    text-decoration: none;
+}
+
+
+.preNextImage {
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: rgb(133, 133, 133);
+}
+.preNextName {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0.8rem 0 0.8rem;
+    color: white;
+    text-transform: capitalize;
+}
+.preNextId {
+    font-size: 0.8rem;
+    margin: 1rem 0 0.8rem 0;
+    padding: 0 0.5rem 0 0.5rem;
+    background-color: #999999;
+    color: white;
+}
+
+.pokemonNameBlock {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokemonName {
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgb(255,255,255), 
+    0 0 20px rgb(255,255,255), 
+    0 0 30px rgb(255,255,255), 
+    0 0 40px #607D8B, 0 0 70px #607D8B;
+
+    font-size: 3rem;
+    padding: 1rem 0 1rem 0;
+}
+.pokemonId{
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+    background-color: #999999;
+    color: white;
+}
+
+.pokemonContent{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+}
+
+.pokemonImage {
+    width: 450px;
+    height: 450px;
+    border: transparent;
+    box-shadow: 10px 10px 10px 2px rgba(0,0,0,0.3);
+    background-color: rgb(240, 237, 235);
+    margin: auto;
+    margin-bottom: 50px;
+}
+.pokemonDetail {
+    width: 500px;
+    height: 450px;
+    margin-bottom: 2rem;
+}
+.pokemonExplain {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    font-size: 112.5%;
+    line-height: 150%;
+}
+.pokemonDataBlock {
+    width:90%;
+    margin: auto;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    font-size: 112.5%;
+    margin-top: 1rem; 
+    background-color: #409bbe;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 0.8rem;
+}
+.pokemonData{
+    width: 40%;
+    margin: 1rem;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.pokemonDataTitle{
+    margin: 0.8rem 0 0.4rem 0;
+    color:white;
+}
+
+.evolutionsBlock{
+    width: 100%;
+    background-color: #c7c7c7;
+    background-image: linear-gradient(90deg,rgba(255,255,255,.07) 50%,transparent 50%),linear-gradient(90deg,rgba(255,255,255,.13) 50%,transparent 50%),linear-gradient(90deg,transparent 50%,rgba(255,255,255,.17) 50%),linear-gradient(90deg,transparent 50%,rgba(255,255,255,.19) 50%);
+    background-size: 13px,29px,37px,53px;
+    padding: 1rem; 
+}
+.evolutionsText {
+    margin: 0 0 0.5rem 0;
+}
+.evolutions {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.evolutionArrow{
+    width: 1%;
+    margin: 0 2rem 5rem 2rem;
+    font-weight: bold;
+    font-size: 150%;
+    color: darkslategray;
+}
+.evolutionPart{
+    width:22%;
+    height: 100%;
+}
+
+.evolutionPartContents{
+    display: block;
+    margin: 40px 0 40px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.evolutionImage{
+    width: 120px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: rgb(133, 133, 133);
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.evolutionIdName{
+    display: flex;
+    font-weight: bold;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.evolutionId {
+    font-size: 0.8rem;
+    margin: 0 0.2rem 0 0;
+    padding: 0 0.5rem 0 0.5rem;
+    background-color: #999999;
+    color: white;
+}
+
+.disabled {
+    pointer-events: none;
+}

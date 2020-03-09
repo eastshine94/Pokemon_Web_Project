@@ -1,0 +1,88 @@
+.headerWrapper {
+    width: 100%;
+    margin: 0 0 3rem 0;
+}
+.headerTitle {
+    width: 100%;
+    display: flex;
+    background-color: #FFCB06;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.title {
+    width: 50%;
+    text-decoration: none;
+    margin: 0 0 0 3rem;
+    
+}
+.authButtion {
+    width: 5%;
+    height: 50%;
+    color: white;
+    background-color: #34b1c4;
+    font-size: 90%;
+    font-weight: bold;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 3rem 0 0;
+    padding: 0.2rem;
+    border: 1px solid #34b1c4;
+    cursor: pointer;
+}
+.authButtion:hover {
+    background-color: #2c8f9e;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.menuBlock{
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+    background-color: #313131;
+    padding: 0.8rem 0 0.8rem 0;
+}
+
+.homeBlock{
+    border-right: 2px solid black;
+    border-bottom: 8px solid #919191;
+    color: #919191;
+}
+.homeActive{
+    background-color: #919191;
+    color: white;
+}
+
+.pokedexBlock{
+    border-bottom: 8px solid #E3350D;
+    border-right: 2px solid black;
+    color: #E3350D;
+}
+.pokedexActive{
+    background-color: #E3350D;
+    color: white;
+}
+
+.communityBlock{
+    border-bottom: 8px solid #EE6B2F;
+    color: #EE6B2F;
+}
+.communityActive{
+    background-color: #EE6B2F;
+    color: white;
+}
+
+.menuTitle{
+    font-family: "Flexo-Demi",arial,sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0.3rem 0 0 0;
+}

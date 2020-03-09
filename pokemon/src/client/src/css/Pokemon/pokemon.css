@@ -1,0 +1,262 @@
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.input_search_block {
+    margin: auto;
+    width: 85%;
+}
+
+.input_search {
+    border-color: 1px solid #ddd;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	height: 1.8rem;
+    width: 87%;
+    margin-right: 3px;
+}
+.currentSearch{
+    margin: 0.5rem 0 0 0;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    max-width: 20%;
+    display: inline-block;
+    background-color: #337AB7;
+    color: white;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    border-radius: 1rem;
+}
+
+
+.cancelButton{
+    cursor: pointer;
+    margin: 0 0 0 0.3rem;
+}
+.search_button {
+	width: 8%;
+    height: 2rem;
+    background-color: #337AB7;
+    color: white;
+   
+}
+
+.card_wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    margin: auto;
+    text-overflow: ellipsis;
+    padding: 20px;
+}
+
+.card_content {
+    width : 210px;
+    margin: 0 0.7rem 0.7rem 0;
+    padding: 1rem;
+    overflow: hidden;
+    background: rgb(239,239,239);
+    text-decoration: none;
+    color: black;
+}
+
+.card_number {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: gray;
+}
+.number {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+.card_img{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+.card_name{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    background: oldlace;
+    text-transform: capitalize;
+}
+
+.card_type {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+}
+
+.types{
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin:0 2px;
+    padding:0 3px;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.normal{
+    background-color: rgb(167, 168, 120); 
+}
+.fire{
+    background-color: rgb(240, 89, 70);
+}
+.water{
+    background-color: rgb(104, 144, 240);
+}
+.grass{
+    background-color: rgb(34, 192, 42);
+}
+.electric{
+    background-color: rgb(255, 204, 51);
+}
+.ice{
+    background-color: rgb(154, 214, 214);
+}
+.fighting{
+    background-color: rgb(192, 48, 40);
+}
+.poison{
+    background-color: rgb(160, 64, 160);
+}
+.ground{
+    background-color: rgb(244, 192, 104);
+}
+.flying{
+    background-color: rgb(181, 157, 240);
+}
+.psychic{
+    background-color: rgb(241, 84, 141);
+}
+.bug{
+    background-color: rgb(156, 184, 32);
+}
+.rock{
+    background-color: rgb(192, 163, 47);
+}
+.ghost{
+    background-color: rgb(109, 87, 154);
+}
+.dragon{
+    background-color: rgb(131, 81, 250);
+}
+.dark{
+    background-color: rgb(112, 88, 72);
+}
+.steel{
+    background-color: rgb(104, 146, 160);
+}
+.fairy{
+    background-color: rgb(238, 153, 172);
+}
+
+.card_text {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    background: white;
+}
+
+.card-text-contents {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.card-text-contents h4, p{
+    margin: 0;
+}
+
+
+.nullPage {
+    width: 80%;
+    margin: auto;
+    padding-left: 30px;
+    border: 2px solid rgb(197, 15, 15);
+    border-radius: 20px;
+}
+.infoTitle {
+    color: rgb(197, 15, 15);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.suggestion {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.suggestion_content {
+    color: gray;
+    font-size: 1.25rem;
+}
+
+.sort_block {
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.regions_wrapper{
+    width: 78%;
+    margin: 0 2rem 0 0;
+}
+
+.regions_block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.regionsButton{
+    margin: 0 0.3rem 0.7rem;
+    width: 75px;
+    height: 1.3rem;
+    padding: 10px;
+    border: 1px solid #00315a;
+    border-radius: 6px;
+    text-align: center;
+    background: rgb(139, 166, 230);
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.regionsButton:hover{
+    background: #337ab7;
+    transition: 0.4s ease-in-out;
+}
+
+.regionsButton_primary{
+    background: #00315a;
+    pointer-events: none;
+}
+.sortOption_wrapper{
+    width: 10%;
+
+}
+.sortOption_block {
+    width: 100%;
+
+}
+.sortOption{
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 0 0 0 0.6rem;
+}
+
+.sort_title{
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
