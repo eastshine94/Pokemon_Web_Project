@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": ["src/client"],
+  "exec": "NODE_ENV=development ts-node src/server/app.ts"
+}

@@ -1,0 +1,1 @@
+export type NoticeCategory = "notice"| "game"| "event"| "product";
