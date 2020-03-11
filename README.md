@@ -2,20 +2,22 @@
 
 ## 목차
 
-1. 전체적인 소개
+### 1. 전체적인 소개
 
-2. 페이지 소개
-    1. Home
-    2. Pokemon
-       1. Pokedex
-       2. Detail
-    3. Community
-       1. Board
-       2. Post
-       3. Write, Modify
-    4. Auth
-       1. Login
-       2. Sign Up
+### 2. 페이지 소개
+
+1. **Home**
+2. **Pokemon**
+      1. Pokedex
+      2. Detail
+3. **Community**
+      1. Board
+      2. Post
+      3. Write, Modify
+4. **Auth**
+      1. Login
+      2. Sign Up
+
 
 ## 1. 전체적인 소개
 
