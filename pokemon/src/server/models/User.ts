@@ -1,6 +1,6 @@
-import { Model, Association} from 'sequelize';
+import { Model } from 'sequelize';
 import * as bcrypt from 'bcrypt-nodejs';
-import Board from './Board';
+
 export default class User extends Model {
     public id!:number;
     public userID!: string;

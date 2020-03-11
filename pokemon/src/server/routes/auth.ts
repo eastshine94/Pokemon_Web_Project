@@ -17,7 +17,7 @@ router.post("/login", async (req, res) => {
     const isValidPassword = user.validPassword(password);
     if (isValidPassword) {
       const token = jwt.encode({ id: user.id, userID: user.userID }, config.auth.key);
-      res.json({ data: { token, user }, msg: "Login Success!" });
+      res.json({ data: { token }, msg: "Login Success!" });
     } else {
       return res.status(400).json({ msg: "Password is incorrect." });
     }

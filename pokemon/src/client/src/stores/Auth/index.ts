@@ -9,7 +9,6 @@ interface AuthDTO {
 }
 export type LoginResponseDTO = {
     token: string;
-    id: number;
 }
   
 export type AuthResponseDTO = {
