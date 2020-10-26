@@ -22,7 +22,7 @@ const Pagination: React.FC<InjectedProps> = (props) => {
         pageStore.onPage(page);
         query.page = String(page);
         query.no = undefined;
-        routeProps.history.push({
+        routeProps.history.replace({
             pathname:pathName, 
             search:queryString.stringify(query)});
     }
@@ -30,7 +30,7 @@ const Pagination: React.FC<InjectedProps> = (props) => {
         await pageStore.onFirstPage();
         query.page = await String(pageStore.currentPage);
         query.no = undefined;
-        await routeProps.history.push({
+        await routeProps.history.replace({
             pathname:pathName, 
             search:queryString.stringify(query)});
     }
@@ -38,7 +38,7 @@ const Pagination: React.FC<InjectedProps> = (props) => {
         await pageStore.onPrevPage();
         query.page = await String(pageStore.currentPage);
         query.no = undefined;
-        await routeProps.history.push({
+        await routeProps.history.replace({
             pathname:pathName, 
             search:queryString.stringify(query)});
     }
@@ -46,7 +46,7 @@ const Pagination: React.FC<InjectedProps> = (props) => {
         await pageStore.onNextPage();
         query.page = await String(pageStore.currentPage);
         query.no = undefined;
-        await routeProps.history.push({
+        await routeProps.history.replace({
             pathname:pathName, 
             search:queryString.stringify(query)});
     }
@@ -54,7 +54,7 @@ const Pagination: React.FC<InjectedProps> = (props) => {
         await pageStore.onLastPage();
         query.page = await String(pageStore.currentPage);
         query.no = undefined;
-        await routeProps.history.push({
+        await routeProps.history.replace({
             pathname:pathName, 
             search:queryString.stringify(query)});
     }

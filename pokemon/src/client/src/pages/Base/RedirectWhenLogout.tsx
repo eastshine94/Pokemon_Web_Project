@@ -22,7 +22,6 @@ const RedirectWhenLogout: React.FC<InjectedProps> = ({component:Component, redir
         alert("Login is required.");
         return <Redirect to={redirectTo}/>; 
     }
-    
     return(
         <Route
             path={path}

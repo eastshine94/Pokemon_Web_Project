@@ -106,15 +106,14 @@ const getEvolutionChain = async (url: string) => {
         evolutionSequence.push([
             { id: Number(chain.evolves_to[0].species.url.split("/")[6]), 
                 name: chain.evolves_to[0].species.name },
-            { id: Number(chain.evolves_to[0].evolves_to[1].species.url.split("/")[6]), 
-                name: chain.evolves_to[0].evolves_to[1].species.name 
+            { id: Number(chain.evolves_to[1].species.url.split("/")[6]), 
+                name: chain.evolves_to[1].species.name 
             }]);
         evolutionSequence.push([
             { id: Number(chain.evolves_to[0].evolves_to[0].species.url.split("/")[6]), 
                 name: chain.evolves_to[0].evolves_to[0].species.name},
-            { id: Number(chain.evolves_to[0].evolves_to[1].evolves_to[0].species.url.split("/")[6]), 
-                name: chain.evolves_to[0].evolves_to[1].evolves_to[0].species.name}
-        
+            { id: Number(chain.evolves_to[1].evolves_to[0].species.url.split("/")[6]), 
+                name: chain.evolves_to[1].evolves_to[0].species.name}
         ]); 
     }
     else {
