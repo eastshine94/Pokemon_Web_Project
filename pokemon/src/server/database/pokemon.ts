@@ -57,6 +57,7 @@ const updatePokemonList = async () => {
     }
 }
 const getPokemonData = async (id: number) => {
+    if(id > 807) return false;
     const pokemonData: PokemonResponse = await axios.get("https://pokeapi.co/api/v2/pokemon/" + id)
         .then(res => res.data)
         .catch(err => {
