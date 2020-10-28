@@ -64,7 +64,9 @@ export default class BoardStore {
         const count = await response.data.count as number;
         await this.setPosts(response.data.data);
         await this.pageStore.setTotalPage(Math.ceil(count/15));
-        await this.setCursor(this.posts[0].id);
+        if(this.posts.length > 0) {
+            await this.setCursor(this.posts[0].id);
+        }
     }
 
     @action
