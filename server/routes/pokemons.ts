@@ -8,12 +8,21 @@ const router = express.Router();
 
 //http://localhost:3001/api/pokemons? searchValue= & regions= & orderBy= & offset=1 & limit=12
 router.get('', async (req, res) => {
-  const searchParam: string = req.query.search ? req.query.search.toLowerCase() : "";
+  const searchParam: string = req.query.search
+    ? (req.query.search as string).toLowerCase()
+    : '';
   const offset: number = req.query.offset ? Number(req.query.offset) : 0;
-  const limit: number = req.query.limit ? Number(req.query.limit) : 12
-  const regions: Regions = req.query.regions ? req.query.regions : "All";
-  const regionsQuery: Literal = regions === "All" ? literal("") : literal(`regions= "${req.query.regions}"`);
-  const sortKey: SortKey = req.query.orderBy ? req.query.orderBy : "ID_ASC";
+  const limit: number = req.query.limit ? Number(req.query.limit) : 12;
+  const regions: Regions = req.query.regions
+    ? (req.query.regions as Regions)
+    : 'All';
+  const regionsQuery: Literal =
+    regions === 'All'
+      ? literal('')
+      : literal(`regions= "${req.query.regions}"`);
+  const sortKey: SortKey = req.query.orderBy
+    ? (req.query.orderBy as SortKey)
+    : 'ID_ASC';
   const orderBy = getOrderBy(sortKey);
 
   // 특수문자가 검색될 경우
@@ -27,7 +36,7 @@ router.get('', async (req, res) => {
   }
 
   const pokemons = await Pokemon.findAndCountAll({
-    attributes: ["id", "name", "image", "types", "height", "weight", "regions"],
+    attributes: ['id', 'name', 'image', 'types', 'height', 'weight', 'regions'],
     where: {
       [Op.or]: [
         { id: { [Op.like]: `%${searchParam}%` } },
@@ -38,36 +47,33 @@ router.get('', async (req, res) => {
     },
     order: [[orderBy.col, orderBy.direction]],
     offset: Number(offset),
-    limit: Number(limit),
-  })
+    limit: Number(limit)
+  });
 
   res.json({
     count: pokemons.count,
     data: pokemons.rows
   });
-
 });
 
-router.get('/detail/:id', async(req, res) => {
+router.get('/detail/:id', async (req, res) => {
   const pokemon = await Pokemon.findByPk(req.params.id);
   res.json({
-    data: pokemon,
-  })
+    data: pokemon
+  });
 });
-
 
 const getOrderBy = (val: SortKey) => {
   switch (val) {
-    case "ID_ASC":
-      return { col: "id", direction: "ASC" };
-    case "ID_DESC":
-      return { col: "id", direction: "DESC" };
-    case "Alpha_ASC":
-      return { col: "name", direction: "ASC" };
+    case 'ID_ASC':
+      return { col: 'id', direction: 'ASC' };
+    case 'ID_DESC':
+      return { col: 'id', direction: 'DESC' };
+    case 'Alpha_ASC':
+      return { col: 'name', direction: 'ASC' };
     default:
-      return { col: "name", direction: "DESC" };
+      return { col: 'name', direction: 'DESC' };
   }
-}
-
+};
 
 export default router;
